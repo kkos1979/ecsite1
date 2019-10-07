@@ -1,0 +1,7 @@
+<Files ~"^\.(htaccess|htpasswd)$">
+Deny from all
+</Files>
+AuthUserFile C:\xampp\htdocs\shop\kanri\.htpasswd
+AuthName "Input your ID and Password"
+AuthType Basic
+Require valid-user

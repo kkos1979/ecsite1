@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS shop;
+
+CREATE TABLE goods (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255),
+  price INT UNSIGNED,
+  comment VARCHAR(255),
+  stock INT UNSIGNED,
+);
+
+CREATE TABLE users (
+  id INT PRIMARY KEY,
+  name VARCHAR(255),
+  address VARCHAR(255),
+  tel VARCHAR(16),
+  email VARCHAR(255) UNIQUE,
+  password VARCHAR(255),
+);
